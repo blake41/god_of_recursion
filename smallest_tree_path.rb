@@ -1,0 +1,1 @@
+smallest path to top of tree
