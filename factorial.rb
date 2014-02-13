@@ -1,11 +1,7 @@
+# Define a recursive function that finds the factorial of a number.
 def factorial(n)
-  factiter(n,0,1)
+  return 1 if n == 1
+  n * factorial(n - 1)
 end
 
-def factiter(n, counter, sum)
-  return sum if n == counter
-  sum = sum * (counter + 1)
-  factiter(n, counter + 1, sum)
-end
-
-puts factorial(6)
+puts factorial(4)
